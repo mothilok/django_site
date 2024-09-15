@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>{{ data.author }}</h3>
+<h1>{{ data.title }}</h1>
+<h3>{{ data.description }}</h3>
+img:<img src="{{ data.image.url }}"><br>
+mini:<img src="{{ data.miniature.url }}"><br>
+ЦЕНА: {{ data.price }}
+<h3>{{ data.date_published }}</h3><br>
+ТЕЛЕФОН: {{ data.phone_number }}
+</body>
+</html>

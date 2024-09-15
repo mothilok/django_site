@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2><a href="{% url 'create_poster' %}">создать объявление</h2>
+<h1>
+    {% for i in data %}
+    <a href="{% url 'post' i.id %}">{{ i }}</a><br>
+    {% endfor %}
+</h1>
+
+</body>
+</html>
